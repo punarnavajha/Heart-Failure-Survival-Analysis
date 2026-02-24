@@ -1,5 +1,5 @@
 # Heart-Failure-Survival-Analysis
-# Survival Analysis: Heart Failure Clinical Outcomes
+
 
 ###  Introduction
 
@@ -8,6 +8,8 @@ This project presents a retrospective survival analysis of patients with heart f
 The primary objective is to identify and quantify the impact of specific clinical biomarkers—such as age, ejection fraction, and serum creatinine—on patient longevity.
 
 By utilizing non-parametric (Kaplan-Meier) and semi-parametric (Cox Proportional Hazards) methods, this study evaluates which clinical factors most significantly influence the hazard of mortality
+
+---
 
 ### Data and Methods 
 
@@ -18,6 +20,8 @@ Dataset: Heart Failure Clinical Records (ID: 519)
 Indicator: Time to death event or censoring (Days)
 
 Sample Size: 299 observations
+
+---
 
 ### Methods
 
@@ -35,6 +39,8 @@ A significant technical hurdle was encountered during the data acquisition phase
 
 # Resolution:
 The issue was resolved by programmatically configuring an unverified SSL context for the urllib library. This ensured a stable, reproducible data fetch pipeline without compromising the local system's global security settings.
+
+---
 
 ###  Clinical Insights & Findings
 My model achieved a **Concordance Index of 0.72**.
@@ -56,11 +62,15 @@ Using the `lifelines` library, I identified three primary predictors of mortalit
 * **Age (HR: 1.05):** Each year of age increases mortality risk by **5%**.
 * **Ejection Fraction (HR: 0.95):** A protective factor; higher heart pump efficiency reduces mortality risk by **5%**.
 
+---
+
 ### Discussion
 
 Marked variation in survival hazard was observed based on biochemical markers. The Hazard Ratio of 1.43 for serum creatinine highlights the critical prognostic value of renal function in heart failure patients. Conversely, the protective effect of ejection fraction (HR 0.95) underscores the importance of cardiac pump efficiency in determining longevity.
 
 These differences likely reflect structural physiological factors and the progression of multi-organ failure (specifically cardiorenal syndrome).
+
+---
 
 ### Limitations
 
@@ -69,6 +79,8 @@ These differences likely reflect structural physiological factors and the progre
 **Case Mix:**  No adjustment for comorbid conditions outside the provided features or genetic predispositions.
 
 **Descriptive Scope:** Findings identify associations rather than direct causal pathways.
+
+---
 
 ###  Technical Resilience
 * **Environment:** Developed in Python 3.14 on macOS.
