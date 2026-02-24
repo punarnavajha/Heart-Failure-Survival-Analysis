@@ -37,7 +37,7 @@ Sample Size: 299 observations
 
 A significant technical hurdle was encountered during the data acquisition phase in a Python 3.14 (macOS) environment. The system triggered a SSLCertVerificationError due to missing root certificates in the standalone Python installation.
 
-# Resolution:
+### Resolution:
 The issue was resolved by programmatically configuring an unverified SSL context for the urllib library. This ensured a stable, reproducible data fetch pipeline without compromising the local system's global security settings.
 
 ---
