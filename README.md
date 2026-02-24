@@ -9,8 +9,7 @@ The primary objective is to identify and quantify the impact of specific clinica
 
 By utilizing non-parametric (Kaplan-Meier) and semi-parametric (Cox Proportional Hazards) methods, this study evaluates which clinical factors most significantly influence the hazard of mortality
 
-### Data and Methods
-Data Source
+### Data and Methods 
 
 Provider: UCI Machine Learning Repository
 
