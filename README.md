@@ -1,10 +1,10 @@
 # Heart-Failure-Survival-Analysis
-## 🏥 Survival Analysis: Heart Failure Clinical Outcomes
+##  Survival Analysis: Heart Failure Clinical Outcomes
 
-### 📌 Project Overview
+###  Project Overview
 This study investigates mortality risk factors in heart failure patients using a cohort of 299 observations from the UCI Machine Learning Repository. I implemented Kaplan-Meier survival curves and a multivariate Cox Proportional Hazards model to identify significant clinical predictors.
 
-### 📈 Clinical Insights & Findings
+### Clinical Insights & Findings
 My model achieved a **Concordance Index of 0.72**.
 
 #### 1. Survival Probability (Kaplan-Meier)
@@ -19,6 +19,6 @@ Using the `lifelines` library, I identified three primary predictors of mortalit
 * **Age (HR: 1.05):** Each year of age increases mortality risk by **5%**.
 * **Ejection Fraction (HR: 0.95):** A protective factor; higher heart pump efficiency reduces mortality risk by **5%**.
 
-### 🛠️ Technical Resilience
+###  Technical Resilience
 * **Environment:** Developed in Python 3.14 on macOS.
 * **Problem Solving:** Successfully addressed `SSLCertVerificationError` hurdles during data acquisition by programmatically configuring an unverified SSL context for `urllib`.
